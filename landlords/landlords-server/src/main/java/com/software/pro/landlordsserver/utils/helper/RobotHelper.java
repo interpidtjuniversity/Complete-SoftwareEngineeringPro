@@ -251,8 +251,8 @@ public class RobotHelper {
                                 System.out.println("跟三代二");
                                 shotpokerrs.addAll(robotpokers.get(integer));
                                 shotpokerrs.addAll(robotpokers.get(probable));
-                                shotpokerrs.remove(integer);
-                                shotpokerrs.remove(probable);
+                                robotpokers.remove(integer);
+                                robotpokers.remove(probable);
                                 nextshot = shotpokerrs.toArray(new Integer[shotpokerrs.size()]);
                                 upDate(table_id, robot_id, shotpokerrs, robotpokers);
                                 return nextshot;
